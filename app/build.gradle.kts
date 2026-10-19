@@ -8,6 +8,10 @@ android {
         version = release(37)
     }
 
+    buildFeatures {
+        viewBinding = true
+    }
+
     defaultConfig {
         applicationId = "ca.gbc.comp3074.devtrack_mobile"
         minSdk = 24
