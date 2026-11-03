@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp">
+
+    <!-- Timer Header -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/timer_title"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp" />
+
+    <!-- Countdown Display -->
+    <TextView
+        android:id="@+id/textTimerCountdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/timer_default_time"
+        android:textSize="64sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="48dp" />
+
+    <!-- Control Buttons -->
+    <Button
+        android:id="@+id/btnStartTimer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_start_focus"
+        android:padding="12dp"
+        android:layout_marginBottom="12dp" />
+
+    <Button
+        android:id="@+id/btnPauseTimer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_pause"
+        android:padding="12dp"
+        android:layout_marginBottom="12dp" />
+
+    <Button
+        android:id="@+id/btnResetTimer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_reset"
+        android:padding="12dp"
+        style="?android:attr/buttonStyleSmall" />
+
+</LinearLayout>
