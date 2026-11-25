@@ -1,53 +1,86 @@
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
-    android:padding="24dp">
+    android:fillViewport="true">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="FOCUS TIMER"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:layout_marginBottom="32dp" />
-
-    <TextView
-        android:id="@+id/textTimerCountdown"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="25:00"
-        android:textSize="64sp"
-        android:textStyle="bold"
-        android:layout_marginBottom="32dp" />
-
-    <Button
-        android:id="@+id/btnStartTimer"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="START FOCUS" />
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="24dp">
 
-    <Button
-        android:id="@+id/btnPauseTimer"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="PAUSE"
-        android:layout_marginTop="8dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FOCUS TIMER"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp" />
 
-    <Button
-        android:id="@+id/btnResetTimer"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="RESET"
-        android:layout_marginTop="8dp" />
+        <TextView
+            android:id="@+id/textTimerCountdown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="25:00"
+            android:textSize="64sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp" />
 
-    <Button
-        android:id="@+id/btnBackToDashboard"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="BACK TO DASHBOARD"
-        android:layout_marginTop="16dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Duration"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
-</LinearLayout>
+        <Spinner
+            android:id="@+id/spinnerDuration"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/editCustomDuration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Custom duration in minutes"
+            android:inputType="number"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnApplyDuration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SET DURATION" />
+
+        <Button
+            android:id="@+id/btnStartTimer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="START FOCUS"
+            android:layout_marginTop="24dp" />
+
+        <Button
+            android:id="@+id/btnPauseTimer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PAUSE" />
+
+        <Button
+            android:id="@+id/btnResetTimer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RESET" />
+
+        <Button
+            android:id="@+id/btnBackToDashboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BACK TO DASHBOARD"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+
+</ScrollView>
